@@ -1,0 +1,65 @@
+<!-- Section Banner -->
+<section>
+  <div class="container-fluid">
+    <div
+      class="row bg-danger justify-content-center align-items-center"
+      style="height: 60vh"
+    >
+      <div class="text-center col-sm-10">
+        <h1 class="display-2 text-capitalize">
+          <span class="text-dark">Le</span>
+          <span class="text-light font-weight-bold">Pressé</span>
+        </h1>
+        <h2 class="font-weight-light font-italic text-light">
+          La revue nº1 de toute la plantète entière, peu importe le sujet
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Section Banner-->
+
+<!-- Section Equipe -->
+<section class="bg-light p-sm-5 p-2">
+  <div class="container-fluid">
+    <!-- Titre -->
+    <div class="row">
+      <div class="col text-center mb-3">
+        <h1 class="text-dark display-2">Articles en vedette</h1>
+      </div>
+    </div>
+    <!-- Fin Titre -->
+    <div *ngFor="let item of listArticles">
+      <div class="col-lg-10 col-sm-10 mx-auto mb-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">
+              <h3 class="text-muted">
+                {{ item.titre }}
+                <a [routerLink]="['/afficherForm/', item.id]"
+                  ><i class="fas fa-link text-danger"></i
+                ></a>
+              </h3>
+            </div>
+            <div class="card-subtitle">
+              <p class="lead text-secondary">{{ item.intro }}</p>
+            </div>
+            <div class="text-right text-dark text-capitalize">
+              <h4>
+                {{ item.auteur }}
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="estVide == 0">
+      <div [hidden]>
+        <h2 class="font-weight-light font-italic text-dark text-center">
+          Il n'y a pas encore d'articles publiés.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fin Section Equipe -->

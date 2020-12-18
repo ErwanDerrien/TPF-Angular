@@ -1,0 +1,31 @@
+{
+  "api": [
+    {
+      "titre": "Hiver",
+      "auteur": "Erwan",
+      "exclusivite": "true",
+      "sujet": "informatique",
+      "langue": "Francais",
+      "intro": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor dolorem id assumenda nostrum libero corrupti, impedit incidunt doloremque, autem accusantium dolores totam consequuntur temporibus? Ad ipsam ipsa distinctio suscipit sequi?",
+      "id": 1
+    },
+    {
+      "titre": "Automne",
+      "auteur": "Louis",
+      "exclusivite": false,
+      "sujet": "science",
+      "langue": "Anglais",
+      "intro": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor dolorem id assumenda nostrum libero corrupti, impedit incidunt doloremque, autem accusantium dolores totam consequuntur temporibus? Ad ipsam ipsa distinctio suscipit sequi?",
+      "id": 2
+    },
+    {
+      "titre": "Printemps",
+      "auteur": "Derrien",
+      "exclusivite": "true",
+      "sujet": "histoire",
+      "langue": "Arabe",
+      "intro": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor dolorem id assumenda nostrum libero corrupti, impedit incidunt doloremque, autem accusantium dolores totam consequuntur temporibus? Ad ipsam ipsa distinctio suscipit sequi?",
+      "id": 3
+    }
+  ]
+}

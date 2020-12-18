@@ -1,0 +1,183 @@
+<ng-container [ngSwitch]="indexTuto">
+  <ng-container *ngSwitchCase="1">
+    <div>
+      <div class="row">
+        <div class="bg-danger col text-center my-3">
+          <h1 class="text-light display-4">
+            Mini tutoriel Angular 10
+            <a href="https://angular.io/" class="btn btn-light mb-2 mx-1">
+              <i>Site officiel</i>
+            </a>
+          </h1>
+        </div>
+      </div>
+      <div class="row text-center mt-4">
+        <div class="col-lg-3 col-sm-10 mx-auto mb-5">
+          <i class="fas fa-desktop fa-6x text-danger mb-3"></i>
+          <h1 class="text-secondary">Définition</h1>
+          <p class="text-muted my-4">
+            Angular est un framework pour le développement d'applications
+            d'entreprises modulaires. Il permet de créer des SPA pour lesquelles
+            les développeurs construises des modules activés par la route.
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-sm-10 mx-auto mb-5">
+          <i class="fas fa-edit fa-6x text-danger mb-3"></i>
+          <h1 class="text-secondary">Conception</h1>
+          <p class="text-muted my-4">
+            L'assemblage d'une page angular se fait avec des composants. Il est
+            aussi nécessaire d'utiliser des interfaces et de définir les routes.
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-sm-10 mx-auto mb-5">
+          <i class="fas fa-cogs fa-6x text-danger mb-3"></i>
+          <h1 class="text-secondary">Creation</h1>
+          <p class="text-muted my-4">
+            Pour creér un projet Angular avec la classe de routage, on utilise
+            la commande :
+            <br /><code>ng new my-app --ng4 --routing</code><br />
+            Pour créer une composante : <br /><code>ng g c my-component</code
+            ><br />
+            Pour créer une interface :
+            <br /><code>ng g i my-interface</code><br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="2">
+    <div class="row">
+      <div class="bg-danger col text-center my-3">
+        <h1 class="text-light display-4">Mini tutoriel Crud</h1>
+      </div>
+    </div>
+
+    <div class="row text-center mt-4">
+      <div class="col-lg-3 col-md-6 col-sm-10 mx-auto mb-5">
+        <i class="fas fa-plus-square fa-6x text-danger mb-3"></i>
+        <h1 class="text-secondary">
+          <span class="text-danger">C</span>
+          <span class="text-secondary">reate</span>
+        </h1>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-10 mx-auto mb-5">
+        <i class="fas fa-book fa-6x text-danger mb-3"></i>
+        <h1 class="text-secondary">
+          <span class="text-danger">R</span>
+          <span class="text-secondary">ead</span>
+        </h1>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-10 mx-auto mb-5">
+        <i class="fas fa-pen fa-6x text-danger mb-3"></i>
+        <h1 class="text-secondary">
+          <span class="text-danger">U</span>
+          <span class="text-secondary">pdate</span>
+        </h1>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-10 mx-auto mb-5">
+        <i class="fas fa-trash fa-6x text-danger mb-3"></i>
+        <h1 class="text-secondary">
+          <span class="text-danger">D</span>
+          <span class="text-secondary">elete</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-lg-6 col-sm-6 mx-auto mb-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">
+              <h3 class="text-muted">Qu'est ce que c'est ?</h3>
+            </div>
+            <div class="card-subtitle">
+              Les quatres opérations de base du CRUD sont essentielle lorsqu'il
+              est question de persistence des données. Avec Angular, ces
+              opérations sont définies dans un service générique qui vas pouvoir
+              être repris par d'autres services plus spécialisés.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="3">
+    <div class="row">
+      <div class="bg-danger col text-center my-3">
+        <h1 class="text-light display-4">
+          Mini Tuto TypeScript
+          <a
+            href="https://www.typescriptlang.org/"
+            class="btn btn-light mb-2 mx-1"
+          >
+            <i>Site officiel</i>
+          </a>
+        </h1>
+      </div>
+    </div>
+    <div class="row text-center mt-4">
+      <div class="col-lg-4 col-md-4 col-sm-10 mx-auto mb-5">
+        <div class="card-title">
+          <h3 class="text-muted">Qu'est ce que c'est ?</h3>
+        </div>
+        <p class="text-secondary my-4">
+          <i
+            >JavaScript est un langage non-typé. TypeScript est un langage par
+            dessus JS qui ajoute des types (annotations, génériques, interfaces)
+            et rapproche le langage à Java, qui et très typé</i
+          >
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-10 mx-auto mb-5">
+        <div class="card-title">
+          <h3 class="text-muted">Comment l'installer ?</h3>
+        </div>
+        <p class="text-muted my-4">
+          Installation via npm :
+          <br /><code>npm install -g typescript</code><br />
+          Rouleur le compilateur via tsc: <br /><code>npx tsc</code>
+        </p>
+        <i class="text-muted">*Node Js est un prérequis*</i>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="4">
+    <div>
+      <div class="row">
+        <div class="bg-danger col text-center my-3">
+          <h1 class="text-light display-4">
+            Mini Tuto Relations <br />
+            En cours de développement...
+          </h1>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchDefault>
+    <div>
+      <div class="row">
+        <div class="bg-danger col text-center my-3">
+          <h1 class="text-light display-4">Tutoriel introuvable</h1>
+          <a [routerLink]="['/tutoriel/1']" class="btn btn-light mb-2 mx-1"
+            >Tuto Angular</a
+          >
+          <a [routerLink]="['/tutoriel/2']" class="btn btn-light mb-2 mx-1"
+            >Tuto Crud</a
+          >
+          <a [routerLink]="['/tutoriel/3']" class="btn btn-light mb-2 mx-1"
+            >Tuto TypeScript</a
+          >
+          <a [routerLink]="['/tutoriel/4']" class="btn btn-light mb-2 mx-1"
+            >Tuto Relations</a
+          >
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</ng-container>

@@ -1,0 +1,124 @@
+<div class="container-fluid">
+  <!-- Titre -->
+  <div class="row">
+    <div class="bg-danger col text-center my-3">
+      <h1 class="text-light display-4">Soumettre un article</h1>
+    </div>
+  </div>
+  <!-- Fin titre -->
+
+  <div class="container">
+    <form [formGroup]="articleFrom" (ngSubmit)="onSubmit()">
+      <div *ngIf="validMessage != ''">
+        <h3 class="has-info">{{ validMessage }}</h3>
+      </div>
+
+      <div class="form-group">
+        <label for="nom">Titre</label>
+        <input id="titre" formControlName="titre" class="form-control" />
+        <div
+          *ngIf="!form.titre.valid && (form.titre.dirty || form.titre.touched)"
+        >
+          <div [hidden]="!form.titre.errors.required">
+            Le titre est obligatoire
+          </div>
+          <div [hidden]="!form.titre.errors.minlength">
+            Le titre doit avoir au minimum 5 caracteres
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="auteur">Auteur</label>
+        <input id="auteur" formControlName="auteur" class="form-control" />
+        <div
+          *ngIf="
+            !form.auteur.valid && (form.auteur.dirty || form.auteur.touched)
+          "
+        >
+          <div [hidden]="!form.auteur.errors.required">
+            L'auteur est obligatoire
+          </div>
+        </div>
+      </div>
+
+      <div class="form-check form-group">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="exclusivite"
+          formControlName="exclusivite"
+        />
+        <label class="form-check-label" for="emailOffers"> Exclusif </label>
+      </div>
+
+      <div class="form-group">
+        <p>Sujet</p>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            formControlName="sujet"
+            id="sujetInformatique"
+            value="informatique"
+            checked
+          />
+          <label class="form-check-label" for="sujetInformatique">
+            Informatique
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            formControlName="sujet"
+            id="sujetScience"
+            value="science"
+          />
+          <label class="form-check-label" for="sujetScience"> Science </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            formControlName="sujet"
+            id="sujetHistoire"
+            value="histoire"
+          />
+          <label class="form-check-label" for="sujetHistoire"> Histoire </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="langue">Langue</label>
+        <select class="form-control" id="langue" formControlName="langue">
+          <option>Francais</option>
+          <option>Anglais</option>
+          <option>Arabe</option>
+        </select>
+        <div
+          *ngIf="
+            !form.langue.valid && (form.langue.dirty || form.langue.touched)
+          "
+        >
+          <div [hidden]="!form.langue.errors.required">
+            La langue est obligatoire
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="intro">Intro</label>
+        <textarea
+          id="intro"
+          formControlName="intro"
+          class="form-control"
+          rows="3"
+        ></textarea>
+      </div>
+
+      <button class="btn btn-danger">Soumettre</button>
+      <button class="btn btn-secondary ml-1" type="reset">Réinitialiser</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+{ "api":
+
+    [{
+      "id": 1,
+      "name": "Erwan",
+      "password": "wan",
+      "emailOffers": true,
+      "interfaceStyle": "Medium",
+      "subscriptionType": "Annual",
+      "notes": "Vendredi"
+    }]
+      
+}

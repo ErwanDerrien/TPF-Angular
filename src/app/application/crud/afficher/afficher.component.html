@@ -1,0 +1,53 @@
+<div class="container">
+  <!-- Titre -->
+  <div class="row">
+    <div class="bg-danger col text-center my-3">
+      <h1 class="text-light display-4">
+        Informations sur l'article {{ article.id }}
+      </h1>
+    </div>
+  </div>
+  <!-- Fin titre -->
+  <table>
+    <tr>
+      <th>Id</th>
+      <td>{{ article.id }}</td>
+    </tr>
+    <tr>
+      <th>Titre</th>
+      <td>{{ article.titre }}</td>
+    </tr>
+    <tr>
+      <th>Auteur</th>
+      <td>{{ article.auteur }}</td>
+    </tr>
+    <tr>
+      <th>Exclusivite</th>
+      <td>{{ article.exclusivite }}</td>
+    </tr>
+    <tr>
+      <th>Sujet</th>
+      <td>{{ article.sujet }}</td>
+    </tr>
+    <tr>
+      <th>Langue</th>
+      <td>{{ article.langue }}</td>
+    </tr>
+    <tr>
+      <th>Intro</th>
+      <td>{{ article.intro }}</td>
+    </tr>
+  </table>
+  <div class="form-group">
+    <label for="submit" class="col-md-4 control-lablel"></label>
+    <div class="col-md-8">
+      <a
+        routerLink="/crud"
+        id="cancel"
+        name="cancel"
+        class="btn btn-secondary ml-1"
+        >Retour au Crud</a
+      >
+    </div>
+  </div>
+</div>

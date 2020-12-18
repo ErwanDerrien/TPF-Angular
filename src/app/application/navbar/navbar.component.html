@@ -1,0 +1,103 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-dark">
+    <!-- fixed-top -->
+    <div class="container-fluid">
+      <a
+        href="https://github.com/ErwanDerrien"
+        class="text-danger fa-2x px-2 navbar-brand"
+      >
+        <i> Erwan</i>
+      </a>
+
+      <ul class="list-inline">
+        <li class="list-inline-item navbar-brand"></li>
+      </ul>
+      <button
+        class="navbar-toggler bg-light"
+        data-toggle="collapse"
+        data-target="#nav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <ul class="navbar-nav align-self-end" id="nav">
+          <li class="nav-item dropdown d-none">
+            <a
+              class="nav-link dropdown-toggl"
+              href="#"
+              id="navbarDropdownMenu"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              routerLink="home"
+              class="nav-link font-weight-bold text-capitalize text-light px-3"
+              >Home</a
+            >
+          </li>
+
+          <li class="nav-item dropdown" data-toggle="dropdown">
+            <a
+              class="nav-link font-weight-bold text-capitalize text-light dropdown px-3"
+              >Tutoriels</a
+            >
+            <div class="dropdown-menu">
+              <a [routerLink]="['/tutoriel', 1]" class="dropdown-item"
+                >Mini Tutoriel Angular 10</a
+              >
+              <a [routerLink]="['/tutoriel', 2]" class="dropdown-item"
+                >Mini Tutoriel Crud</a
+              >
+              <a [routerLink]="['/tutoriel', 3]" class="dropdown-item"
+                >Mini Tutoriel TypeScript</a
+              >
+              <a [routerLink]="['/tutoriel', 4]" class="dropdown-item"
+                >Mini Tutoriel Relations</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a
+              [routerLink]="['/fromulaire']"
+              class="nav-link font-weight-bold text-capitalize text-light px-3"
+              >Formulaire</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              [routerLink]="['/crud']"
+              class="nav-link font-weight-bold text-capitalize text-light px-3"
+              >Crud</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              [routerLink]="['/fun']"
+              class="nav-link font-weight-bold text-capitalize text-light px-3"
+              >Fun</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              [routerLink]="['/contact']"
+              class="nav-link font-weight-bold text-capitalize text-light px-3"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,12 @@
+{ "api":
+
+    [{
+        "titre": "Article1",
+        "auteur": "Erwan",
+        "exclusivite": true,
+        "sujet": "histoire",
+        "langue": "arabe",
+        "intro": "string"
+    }]
+      
+}
